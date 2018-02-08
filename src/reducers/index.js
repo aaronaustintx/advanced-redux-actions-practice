@@ -5,7 +5,7 @@ function currentCount(state=0, action){
     return state +1;
   }
   if(action.type === "DECREASE_COUNTER"){
-    return state -1;
+    return state-1;
   }
   return state;
 }   
