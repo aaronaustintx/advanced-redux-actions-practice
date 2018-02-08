@@ -9,4 +9,16 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps)(SpecialText);
+
+
+
+
+const SpecialTextContainer= connect(
+mapStateToProps
+//put component name 
+)(SpecialText);
+export default SpecialTextContainer;
+
+// export default connect(mapStateToProps)(SpecialTextContainer);
+
+

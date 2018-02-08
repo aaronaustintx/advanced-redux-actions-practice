@@ -17,6 +17,8 @@ import SortUsers from "./components/SortUsers";
 import ScaleVideo from "./components/ScaleVideo";
 import Modal from "./components/Modal";
 import ShowModal from "./components/ShowModal";
+import SpecialTextBoxContainer from './containers/SpecialTextBoxContainer';
+import SpecialTextContainer from './containers/SpecialTextContainer';
 
 function App() {
   return (
@@ -24,7 +26,8 @@ function App() {
         <div className="container">
           <CounterButtonContainer />
           <br />
-          <SpecialTextBox />
+          <SpecialTextBoxContainer />
+          {/* <SpecialTextBox /> */}
           <br />
           <UserButtons />
           <br />
@@ -45,7 +48,8 @@ function App() {
         <div className="container">
           <Counter />
           <br />
-          <SpecialText />
+          {/* <SpecialText /> */}
+          <SpecialTextContainer />
           <br />
           <CurrentCity />
           <br />
