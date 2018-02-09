@@ -23,10 +23,10 @@ function mapDispatchToProps(dispatch){
     }
   }
 }
-// export default (SpecialTextBox);
+export default SpecialTextBox;
 
-const SpecialTextBoxContainer= connect(null,
-  mapDispatchToProps
-  //put component name 
- )(SpecialTextBox);
- export default SpecialTextBoxContainer
+// const SpecialTextBoxContainer= connect(null,
+//   mapDispatchToProps
+//   //put component name 
+//  )(SpecialTextBox);
+//  export default SpecialTextBoxContainer

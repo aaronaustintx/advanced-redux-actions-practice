@@ -23,6 +23,7 @@ function users(state =[], action){
 
 function specialText(state = "", action){
   if(action.type === "SET_SPECIAL_TEXT"){
+      
     return action.value;
   }
   return state;
@@ -30,6 +31,6 @@ function specialText(state = "", action){
 
 
 const rootReducer = combineReducers({
- currentCount
+ currentCount, specialText
 });
 export default rootReducer;
