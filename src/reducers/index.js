@@ -12,7 +12,8 @@ function currentCount(state=0, action){
 
 function users(state =[], action){
   if(action.type === "ADD_USER"){
-
+      return [...state,action.value]; 
+    // return action.value;
   }
   if(action.type === "REMOVE_USER"){
     
@@ -29,7 +30,7 @@ function specialText(state = "", action){
   return state;
 }
 
-
+// add to reducers
 const rootReducer = combineReducers({
  currentCount, specialText
 });

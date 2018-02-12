@@ -19,6 +19,8 @@ import Modal from "./components/Modal";
 import ShowModal from "./components/ShowModal";
 import SpecialTextBoxContainer from './containers/SpecialTextBoxContainer';
 import SpecialTextContainer from './containers/SpecialTextContainer';
+import UserButtonContainer from './containers/UserButtonContainer';
+import UserContainer from './containers/UsersContainer';
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
           <SpecialTextBox />
           <br />
           <UserButtons />
+          <UserButtonContainer />
           <br />
           <CityDropDown />
            <br />

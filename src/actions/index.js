@@ -18,7 +18,7 @@ export function setSpecialText(txt){
 }
 
 export function addUser(user){
-  return {
+  return {                                
     type:"ADD_USER",
     value:user
   }
