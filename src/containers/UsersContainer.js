@@ -3,22 +3,10 @@ import Users from '../components/Users';
 import {addUser} from '../actions/index.js'
 import {removeUser} from '../actions/index.js'
 
-
-
-// function mapDispatchToProps(dispatch){
-//     return {
-//       increase:function(){
-//         var action = Counter();
-//         dispatch(action);
-//       }
-//     }
-//     }
-    
-
-  function mapStateToProps(state){
+     function mapStateToProps(state){
     return{
-        // this is the prop
-        users:state.Users
+        // this is the prop - must use prop name
+        users:state.users
      }
     }  
 

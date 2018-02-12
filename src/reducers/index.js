@@ -16,7 +16,7 @@ function users(state =[], action){
     // return action.value;
   }
   if(action.type === "REMOVE_USER"){
-    
+     return state.slice(1);
   }
   return state;
 }
@@ -32,6 +32,6 @@ function specialText(state = "", action){
 
 // add to reducers
 const rootReducer = combineReducers({
- currentCount, specialText
+ currentCount, specialText, users
 });
 export default rootReducer;
