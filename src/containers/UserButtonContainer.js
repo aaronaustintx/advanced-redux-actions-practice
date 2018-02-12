@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import Users from '../components/Users';
 import {addUser} from '../actions/index.js'
 import {removeUser} from '../actions/index.js'
+import UserButtons from '../components/UserButtons';
 
 
 // because cares about change - no need to map to props
@@ -34,5 +35,5 @@ function mapDispatchToProps(dispatch){
 const UserButtonContainer= connect(null,
  mapDispatchToProps
  //put component name 
-)(Users);
+)(UserButtons);
 export default UserButtonContainer

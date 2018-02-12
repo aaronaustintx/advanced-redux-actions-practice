@@ -31,7 +31,7 @@ function App() {
           {/* <SpecialTextBoxContainer /> */}
           <SpecialTextBox />
           <br />
-          <UserButtons />
+          {/* <UserButtons /> */}
           <UserButtonContainer />
           <br />
           <CityDropDown />
@@ -53,7 +53,6 @@ function App() {
           <br />
           <SpecialText />
           {/* <SpecialTextContainer /> */}
-          <UserContainer />
           <br />
           <CurrentCity />
           <br />
@@ -65,7 +64,9 @@ function App() {
           
         </div>
         <div className="container">
-          <Users />
+          {/* <Users /> */}
+          <UserContainer />
+
         </div>
         <Modal />
       </div>
