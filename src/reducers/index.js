@@ -30,8 +30,24 @@ function specialText(state = "", action){
   return state;
 }
 
+function currentTemp(state = 0, action){
+  if(action.type === "SET_TEMP"){
+      
+    return action.value;
+  }
+  return state;
+}
+
+function currentCity(state = "", action){
+  if(action.type === "SET_CITY"){
+      
+    return action.value;
+  }
+  return state;
+}
+
 // add to reducers
 const rootReducer = combineReducers({
- currentCount, specialText, users
+ currentCount, specialText, users, currentTemp, currentCity 
 });
 export default rootReducer;

@@ -28,3 +28,16 @@ export function removeUser(){
     type:"REMOVE_USER"
   }
 }
+
+export function setTemp(temp){
+  return {
+    type:"SET_TEMP",
+    value:temp
+  }
+}
+export function setCity(text){
+  return {
+    type:"SET_CITY",
+    value:text
+  }
+}

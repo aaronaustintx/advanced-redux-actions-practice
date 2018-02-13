@@ -21,6 +21,11 @@ import SpecialTextBoxContainer from './containers/SpecialTextBoxContainer';
 import SpecialTextContainer from './containers/SpecialTextContainer';
 import UserButtonContainer from './containers/UserButtonContainer';
 import UserContainer from './containers/UsersContainer';
+import ThermostatContainer from './containers/ThermostatContainer';
+import ChangeTempContainer from './containers/ChangeTempContainer';
+import CityDropDownContainer from './containers/CityDropDownContainer';
+import CurrentCityContainer from './containers/CurrentCityContainer';
+
 
 function App() {
   return (
@@ -34,9 +39,13 @@ function App() {
           {/* <UserButtons /> */}
           <UserButtonContainer />
           <br />
-          <CityDropDown />
+          {/* <CityDropDown /> */}
+          <CityDropDownContainer />
+
            <br />
-          <ChangeTemperature />
+          {/* <ChangeTemperature /> */}
+          <ChangeTempContainer />
+
           <br />
           <SearchTextBox />
           <br />
@@ -54,9 +63,12 @@ function App() {
           <SpecialText />
           {/* <SpecialTextContainer /> */}
           <br />
-          <CurrentCity />
+          {/* <CurrentCity /> */}
+          <CurrentCityContainer />
+
           <br />
-          <Thermostat />
+          {/* <Thermostat /> */}
+          <ThermostatContainer />
           <br />
           <VideoPlayer />
           <br />
