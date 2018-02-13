@@ -46,8 +46,16 @@ function currentCity(state = "", action){
   return state;
 }
 
+function isLoading(state = true, action){
+  if(action.type === "SET_IS_LOADING"){
+      
+    return action.value;
+  }
+  return state;
+}
+
 // add to reducers
 const rootReducer = combineReducers({
- currentCount, specialText, users, currentTemp, currentCity 
+ currentCount, specialText, users, currentTemp, currentCity, isLoading 
 });
 export default rootReducer;

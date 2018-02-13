@@ -41,3 +41,10 @@ export function setCity(text){
     value:text
   }
 }
+
+export function setIsLoading(isLoading){
+  return {
+    type:"SET_IS_LOADING",
+    value:isLoading
+  }
+}

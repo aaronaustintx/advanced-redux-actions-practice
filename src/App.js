@@ -25,7 +25,8 @@ import ThermostatContainer from './containers/ThermostatContainer';
 import ChangeTempContainer from './containers/ChangeTempContainer';
 import CityDropDownContainer from './containers/CityDropDownContainer';
 import CurrentCityContainer from './containers/CurrentCityContainer';
-
+import ShowModalContainer from './containers/ShowModalContainer';
+import ModalContainer from './containers/ModalContainer';
 
 function App() {
   return (
@@ -55,7 +56,9 @@ function App() {
           <br />
           <ScaleVideo />
           <br />
-          <ShowModal />
+          {/* <ShowModal /> */}
+          <ShowModalContainer />
+
         </div>
         <div className="container">
           <Counter />
@@ -80,7 +83,9 @@ function App() {
           <UserContainer />
 
         </div>
-        <Modal />
+        {/* <Modal /> */}
+        <ModalContainer />
+
       </div>
   );
 }
